@@ -1,0 +1,27 @@
+{
+  "name": "whistledrop",
+  "version": "1.0.0",
+  "description": "Privacy-preserving anonymous whistleblowing and confidential reporting REST API",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "test": "node --test --test-concurrency=1 tests/*.test.js",
+    "create-moderator": "node scripts/createModerator.js"
+  },
+  "keywords": ["whistleblowing", "anonymous-reporting", "express", "postgresql", "security"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.5"
+  }
+}
